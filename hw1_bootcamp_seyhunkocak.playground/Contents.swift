@@ -65,3 +65,61 @@ return " \(fruit01.name)'s color is \(fruit01.color)."
 }
 //Calling the function
 giveInformation()
+
+
+//Structs
+
+//Creating a struct that include specialities of car types
+struct Car {
+var brand : String
+var model : String
+var yearOfProduction : Int
+var volumeOfEngine : Int
+var price : Int
+}
+//Defining cars with their specialities
+var car01 = Car(brand: "BMW", model: "4.28i", yearOfProduction: 2019, volumeOfEngine: 2000, price: 980000)
+var car02 = Car(brand: "Volkswagen", model: "Golf", yearOfProduction: 2019, volumeOfEngine: 2, price: 780000)
+var car03 = Car(brand: "Honda", model: "Civic", yearOfProduction: 2016, volumeOfEngine: 2000, price: 580000)
+
+//Defining a function that shows choosen speciality of car
+func choosenSpecialityFunc() -> String{car01.brand}
+choosenSpecialityFunc()
+
+/* question
+brandLetterSeperator(car01)
+func brandLetterSeperator(thecar) {
+for letter in thecar.brand {
+  print(letter)
+}
+}
+*/
+// Enum
+
+// Defining classes of Car Types
+enum CarType {
+case race
+case asphalt
+case mountain
+case desert
+}
+//Defining a variable that use enum type
+var landRover = CarType.mountain
+
+//Optionals
+
+//
+var optionalNumber : String? = nil
+
+optionalNumber = "1995"
+
+var exactNumber : Int!
+exactNumber = 128000000000
+
+if let number = optionalNumber {
+print("The value is \(number).")
+
+} else {
+print("No value.")
+}
+
