@@ -40,3 +40,28 @@ var numberOfTypesOfShoes = Set(sizeOfFeetofDancers)
 let sortedNumberOfTypesOfShoes = numberOfTypesOfShoes.sorted()
 print(sortedNumberOfTypesOfShoes)
 
+//Classes
+
+//Defining a fruit class and the class will include specialities of fruits
+class Fruit {
+
+//Defining two properties of class
+var name = ""
+var color = ""
+
+}
+//Defining objects of class
+var fruit01 = Fruit()
+fruit01.name = "Apple"
+fruit01.color = "Red"
+
+var fruit02 = Fruit()
+fruit02.name = "Banana"
+fruit02.color = "Yellow"
+
+// A function that shows type and color of the fruit.
+func giveInformation() -> String  {
+return " \(fruit01.name)'s color is \(fruit01.color)."
+}
+//Calling the function
+giveInformation()
